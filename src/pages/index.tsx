@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
+import Link from "next/link"
 
 import Slider from '@/components/slider'
 import CardProduct from '@/components/card'
@@ -133,14 +134,14 @@ export default function Home() {
         </div>
 
         <div className="fixed bottom-10 right-10 rounded-full w-14 h-14">
-          <a href="https://wa.me/088976619319" target="_blank">
+          <Link href="https://wa.me/088976619319" target="_blank">
             <Image
                   alt="The guitarist in the concert."
                   src={wa}
                   width={60}
                   height={60}
               />
-          </a>
+          </Link>
         </div>
       </main>
     </>

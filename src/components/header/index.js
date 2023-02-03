@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react"
 import Image from "next/image"
+import Link from "next/link"
 
 import { Transition } from "@headlessui/react"
 import logo from '../../assets/Mitsubishi-Logo.png'
@@ -25,19 +26,19 @@ function Nav() {
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  <a
+                  <Link
                     href="/"
                     className=" hover:bg-red-700 hover:text-white text-black px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Home
-                  </a>
+                  </Link>
 
-                  <a
+                  <Link
                     href="/priceLists"
                     className="text-black hover:bg-red-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Price List
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -99,19 +100,19 @@ function Nav() {
         >
             <div className="md:hidden" id="mobile-menu">
               <div ref={divRef} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a
+                <Link
                   href="/"
                   className="hover:bg-red-700 hover:text-white text-black block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Home
-                </a>
+                </Link>
 
-                <a
+                <Link
                   href="/priceLists"
                   className="text-black hover:bg-red-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Price List
-                </a>
+                </Link>
               </div>
             </div>
         </Transition>
